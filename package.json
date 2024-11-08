@@ -3,12 +3,12 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "type": "module",
+    "type": "commonjs",
     "scripts": {
-      "start": "cross-env NODE_ENV=staging pm2 start ecosystem.config.cjs",
-      "dev": "cross-env NODE_ENV=development nodemon server.cjs",
-      "prod": "cross-env NODE_ENV=production pm2 start ecosystem.config.cjs",
-      "staging": "cross-env NODE_ENV=staging pm2 start ecosystem.config.cjs"
+      "start": "cross-env NODE_ENV=staging pm2 start ecosystem.config.js",
+      "dev": "cross-env NODE_ENV=development nodemon server.js",
+      "prod": "cross-env NODE_ENV=production pm2 start ecosystem.config.js",
+      "staging": "cross-env NODE_ENV=staging pm2 start ecosystem.config.js"
     },
     "author": "specialChem",
     "license": "ISC",
